@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- action: This attribute specifies where to send the form-data when a form is submitted -->
+
+    <form action="success.html" method="">
+      <!-- text input -->
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        name="firstName"
+        id=""
+        placeholder="e.g. John"
+        required
+        readonly
+      />
+      <br />
+      <br />
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" id="" placeholder="e.g. Doe" />
+      <br />
+      <br />
+      <!-- password input -->
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        placeholder="Please type your password"
+      />
+      <br />
+      <br />
+      <!-- email input -->
+      <label for="email">Email</label>
+      <input type="email" name="email" id="" placeholder="abc@gmail.com" />
+      <br />
+      <br />
+      <label for="dob">Date of Birth</label>
+
+      <input type="date" name="dob" />
+
+      <br />
+      <br />
+      <!-- general teextArea -->
+      <label for="description">Description</label>
+      <!-- <br /> -->
+      <textarea
+        style="vertical-align: top"
+        name="description"
+        rows="10"
+        cols="20"
+        placeholder="Type your Description..."
+        style="resize: none"
+      ></textarea>
+
+      <!-- texteArea within table structure -->
+      <table>
+        <tr style="vertical-align: top">
+          <td>
+            <label for="description">Description</label>
+          </td>
+          <td>
+            <textarea
+              name="description"
+              rows="10"
+              cols="20"
+              placeholder="Type your Description..."
+              style="resize: none"
+            ></textarea>
+          </td>
+        </tr>
+      </table>
+
+      <!-- input radio buttons -->
+      <p>Please select your Gender</p>
+      <input type="radio" name="gender" id="" value="male" />Male
+      <input type="radio" name="gender" id="" value="female" checked />Female
+      <input type="radio" name="gender" id="" value="other" checked />Other
+
+      <!-- CheckBox -->
+      <p>Please select your favourite coding language?</p>
+      <input
+        type="checkbox"
+        name="coding"
+        id=""
+        value="javascript"
+        checked
+      />JavaScript
+      <input type="checkbox" name="coding" id="" value="java" checked />Java
+      <input type="checkbox" name="coding" id="" value="html" checked />HTML
+      <input type="checkbox" name="coding" id="" value="css" checked />CSS
+
+      <br />
+      <br />
+
+      <!-- <p>Specify your country name</p> -->
+      <select name="country" id="">
+        <option value="na" selected>Specify your country name</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="italy">Italy</option>
+      </select>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
